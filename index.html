@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🏫 - Portale 5°IB</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="./immagini/favicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="./immagini/favicon.png" type="image/x-icon">
+
+  <!-- 🔍 SEO BASE -->
+  <title>Portale 5°IB – Orario, Aule, Promemoria | ITIS Informatica</title>
+  <meta name="description"
+    content="Portale ufficiale della classe 5°IB – Orario aggiornato, allocazione aule e promemoria settimanali. ITIS Informatica.">
+
+  <!-- 🔗 URL canonica -->
+  <link rel="canonical" href="https://classe5ib.github.io/portale/" />
+
+  <!-- 🖼️ Open Graph (Facebook, Instagram, WhatsApp...) -->
+  <meta property="og:title" content="Portale 5°IB – Orario, Aule e Promemoria" />
+  <meta property="og:description"
+    content="Consultazione rapida di orario, aule e promemoria della 5°IB. Aggiornato settimanalmente." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://classe5ib.github.io/portale/" />
+  <meta property="og:image" content="https://classe5ib.github.io/portale/immagini/anteprima.png" />
+
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portale 5°IB – Orario, Aule, Promemoria" />
+  <meta name="twitter:description" content="Accesso rapido a orari, aule e promemoria della classe 5°IB." />
+  <meta name="twitter:image" content="https://classe5ib.github.io/portale/immagini/anteprima.png" />
+
+  <!-- 📚 Structured Data per Google (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Portale Classe 5°IB",
+    "url": "https://classe5ib.github.io/portale/",
+    "logo": "https://classe5ib.github.io/portale/immagini/favicon.png",
+    "description": "Portale digitale dedicato alla classe 5°IB dell'ITIS Informatica: orario, aule e promemoria.",
+    "department": {
+      "@type": "EducationalOccupationalProgram",
+      "name": "Classe 5°IB Informatica"
+    }
+  }
+  </script>
+
+  <!-- 🌐 Indicazioni generali -->
+  <meta name="theme-color" content="#6366f1" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- 🔤 Font & Performance -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 🖼️ Favicon -->
+  <link rel="icon" type="image/png" href="https://classe5ib.github.io/portale/immagini/favicon.png">
+  <link rel="apple-touch-icon" href="https://classe5ib.github.io/portale/immagini/favicon.png">
+
+  <!-- 🎨 CSS interno -->
   <style>
     body {
       font-family: "Poppins", sans-serif;
@@ -116,13 +165,15 @@
       }
     }
   </style>
+
 </head>
+
 <body>
   <div class="theme-toggle" onclick="toggleTheme()">🌞</div>
 
   <h1>Benvenuto nel Portale della 5°IB</h1>
   <div style="text-align:center; font-size:1.6rem; color:#242569; margin-bottom:28px;">
-     Settimana dal <strong>9</strong> al <strong>12 Dicembre 2025</strong>.
+    Settimana dal <strong>9</strong> al <strong>12 Dicembre 2025</strong>.
   </div>
   <div class="buttons">
     <button onclick="location.href='https://classe5ib.github.io/portale/orario/'">🕑 Visualizza Orario</button>
@@ -148,14 +199,16 @@
     }
   </script>
 </body>
-<footer style="margin-top: 40px; padding: 20px 10px; text-align: center; border-top: 1px solid rgba(0,0,0,0.1); font-size: 0.9rem; color: #1e1e2f; transition: color 0.4s, border-color 0.4s;">
+<footer
+  style="margin-top: 40px; padding: 20px 10px; text-align: center; border-top: 1px solid rgba(0,0,0,0.1); font-size: 0.9rem; color: #1e1e2f; transition: color 0.4s, border-color 0.4s;">
   <div style="display:flex; justify-content:center; align-items:center; gap:8px; flex-wrap: wrap;">
     <span>Creato da <strong>Alessandro Gioielli</strong> |</span>
-    <a href="https://www.instagram.com/_alessandrogioielli_/" target="_blank" style="color:#4338ca; text-decoration:none; display:flex; align-items:center; gap:6px; transition: all 0.3s;">
+    <a href="https://www.instagram.com/_alessandrogioielli_/" target="_blank"
+      style="color:#4338ca; text-decoration:none; display:flex; align-items:center; gap:6px; transition: all 0.3s;">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/>
-        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/>
-        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none" />
+        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none" />
+        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
       </svg>
       Instagram
     </a>
@@ -191,6 +244,5 @@
 
   updateFooterTheme();
 </script>
+
 </html>
-
-
