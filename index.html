@@ -5,247 +5,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 🔍 SEO BASE -->
-  <title>Portale 5°IB – Orario, Aule, Promemoria | ITIS Informatica</title>
-  <meta name="description"
-    content="Portale ufficiale della classe 5°IB – Orario aggiornato, allocazione aule e promemoria settimanali. ITIS Informatica.">
+  <!-- 🎄 SEO -->
+  <title>Buon Natale dalla 5°IB 🎄</title>
+  <meta name="description" content="Auguri di Buon Natale dalla classe 5°IB – ITIS Informatica.">
 
-  <!-- 🔗 URL canonica -->
-  <link rel="canonical" href="https://classe5ib.github.io/portale/" />
-
-  <!-- 🖼️ Open Graph (Facebook, Instagram, WhatsApp...) -->
-  <meta property="og:title" content="Portale 5°IB – Orario, Aule e Promemoria" />
-  <meta property="og:description"
-    content="Consultazione rapida di orario, aule e promemoria della 5°IB. Aggiornato settimanalmente." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://classe5ib.github.io/portale/" />
-  <meta property="og:image" content="https://classe5ib.github.io/portale/immagini/anteprima.png" />
-
-  <!-- 🐦 Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Portale 5°IB – Orario, Aule, Promemoria" />
-  <meta name="twitter:description" content="Accesso rapido a orari, aule e promemoria della classe 5°IB." />
-  <meta name="twitter:image" content="https://classe5ib.github.io/portale/immagini/anteprima.png" />
-
-  <!-- 📚 Structured Data per Google (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Portale Classe 5°IB",
-    "url": "https://classe5ib.github.io/portale/",
-    "logo": "https://classe5ib.github.io/portale/immagini/favicon.png",
-    "description": "Portale digitale dedicato alla classe 5°IB dell'ITIS Informatica: orario, aule e promemoria.",
-    "department": {
-      "@type": "EducationalOccupationalProgram",
-      "name": "Classe 5°IB Informatica"
-    }
-  }
-  </script>
-
-  <!-- 🌐 Indicazioni generali -->
-  <meta name="theme-color" content="#6366f1" />
   <meta name="robots" content="index, follow" />
 
-  <!-- 🔤 Font & Performance -->
+  <!-- 🎅 Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- 🖼️ Favicon -->
-  <link rel="icon" type="image/png" href="https://classe5ib.github.io/portale/immagini/favicon.png">
-  <link rel="apple-touch-icon" href="https://classe5ib.github.io/portale/immagini/favicon.png">
-
-  <!-- 🎨 CSS interno -->
+  <!-- 🎨 STILE NATALIZIO -->
   <style>
     body {
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #c7d2fe, #e0e7ff);
-      color: #1e1e2f;
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #7f1d1d, #991b1b, #14532d);
+      color: #fff;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      transition: background 0.4s, color 0.4s;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
       margin-bottom: 40px;
-      color: #4338ca;
+      opacity: 0.95;
     }
 
-    .buttons {
-      display: flex;
-      gap: 20px;
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 900px;
+      width: 90%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
 
-    button {
-      padding: 14px 28px;
-      border: none;
-      border-radius: 10px;
-      background-color: #6366f1;
-      color: white;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
+    .card p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
     }
 
-    button:hover {
-      transform: scale(1.05);
-      background-color: #4f46e5;
+    .image-box {
+      width: 100%;
+      margin-top: 30px;
     }
 
-    .theme-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: #f3f4f6;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background 0.3s;
+    .image-box img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
     }
 
-    body.dark {
-      background: linear-gradient(135deg, #111827, #1f2937);
-      color: #f9fafb;
-    }
-
-    body.dark button {
-      background-color: #374151;
-    }
-
-    body.dark button:hover {
-      background-color: #4b5563;
-    }
-
-    body.dark .theme-toggle {
-      background: #374151;
-      color: #f9fafb;
+    footer {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      opacity: 0.85;
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 8px;
-        height: auto;
-      }
-
       h1 {
-        font-size: 1.3rem;
-        margin-bottom: 22px;
-        text-align: center;
+        font-size: 2.2rem;
       }
 
-      .buttons {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-        align-items: center;
+      h2 {
+        font-size: 1.2rem;
       }
 
-      button {
-        padding: 10px 0;
-        font-size: 1rem;
-        width: 90vw;
-        max-width: 320px;
-      }
-
-      .theme-toggle {
-        top: 10px;
-        right: 10px;
-        width: 32px;
-        height: 32px;
-        font-size: 1.1rem;
+      .card {
+        padding: 30px 20px;
       }
     }
   </style>
-
 </head>
 
 <body>
-  <div class="theme-toggle" onclick="toggleTheme()">🌞</div>
 
-  <h1>Benvenuto nel Portale della 5°IB</h1>
-  <div style="text-align:center; font-size:1.6rem; color:#242569; margin-bottom:28px;">
-     <!-- Settimana dal <strong>15</strong> al <strong>19 Dicembre 2025</strong>.-->
-    <strong>Lunedi</strong> 22 <strong>Dicembre</strong> 2025.  
+  <div class="card">
+    <h1>Buon Natale</h1>
+    <h2>dalla classe <strong>5°IB</strong></h2>
+
+    <p>
+      Il portale tornerà in funzione dal 6 Gennaio 2026
+    </p>
+
+    <!-- 🖼️ IMMAGINE GRANDE -->
+    <div class="image-box">
+      <!-- Sostituisci src con la tua immagine -->
+      <img src="./immagini/foto.jpeg" alt="Auguri di Buon Natale dalla 5°IB">
+    </div>
   </div>
-  <div class="buttons">
-    <button onclick="location.href='https://classe5ib.github.io/portale/orario/'">🕑 Visualizza Orario</button>
-    <button onclick="location.href='https://classe5ib.github.io/portale/aule/'">🏫 Visualizza Allocazione Aule</button>
-    <button onclick="location.href='https://classe5ib.github.io/portale/promemoria/'">🗓️ Promemoria Generali</button>
-  </div>
 
-  <script>
-    const body = document.body;
-    const toggle = document.querySelector('.theme-toggle');
-    const currentTheme = localStorage.getItem('theme');
+  <footer>
+    Classe 5°IB
+  </footer>
 
-    if (currentTheme === 'dark') {
-      body.classList.add('dark');
-      toggle.textContent = '🌙';
-    }
-
-    function toggleTheme() {
-      body.classList.toggle('dark');
-      const isDark = body.classList.contains('dark');
-      toggle.textContent = isDark ? '🌙' : '🌞';
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    }
-  </script>
 </body>
-<footer
-  style="margin-top: 40px; padding: 20px 10px; text-align: center; border-top: 1px solid rgba(0,0,0,0.1); font-size: 0.9rem; color: #1e1e2f; transition: color 0.4s, border-color 0.4s;">
-  <div style="display:flex; justify-content:center; align-items:center; gap:8px; flex-wrap: wrap;">
-    <span>Creato da <strong>Alessandro Gioielli</strong> |</span>
-    <a href="https://www.instagram.com/_alessandrogioielli_/" target="_blank"
-      style="color:#4338ca; text-decoration:none; display:flex; align-items:center; gap:6px; transition: all 0.3s;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none" />
-        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none" />
-        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-      </svg>
-      Instagram
-    </a>
-  </div>
-</footer>
-
-<script>
-  const footer = document.querySelector('footer');
-  const instaLink = footer.querySelector('a');
-
-  function updateFooterTheme() {
-    if (body.classList.contains('dark')) {
-      footer.style.color = '#f9fafb';
-      footer.style.borderTop = '1px solid rgba(255,255,255,0.2)';
-      instaLink.style.color = '#818cf8';
-    } else {
-      footer.style.color = '#1e1e2f';
-      footer.style.borderTop = '1px solid rgba(0,0,0,0.1)';
-      instaLink.style.color = '#4338ca';
-    }
-  }
-
-  // Effetto hover sull’icona + link
-  instaLink.addEventListener('mouseenter', () => {
-    instaLink.style.transform = 'scale(1.1)';
-  });
-  instaLink.addEventListener('mouseleave', () => {
-    instaLink.style.transform = 'scale(1)';
-  });
-
-  const observer = new MutationObserver(updateFooterTheme);
-  observer.observe(body, { attributes: true, attributeFilter: ['class'] });
-
-  updateFooterTheme();
-</script>
 
 </html>
-
-
